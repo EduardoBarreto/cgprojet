@@ -41,4 +41,12 @@ for i in range(6): # Create the 3 RGB and 3 HSV sliders
     if i == 2: scene.append_to_caption("\n\n") # Separate the RGB and HSV sliders
 sliders[0].value = 1 # make the background red
 sliders[4].value = sliders[5].value = 1
+extrusion(path=paths.arc(radius=2,
+    angle1=-pi/3, angle2=pi+pi/3), color=color.cyan, 
+    shape=[ [shapes.triangle(length=2),              shapes.circle(pos=[0,.5], radius=0.2),
+             shapes.trapezoid(pos=[0,-0.2],
+                 width=0.6, height=0.4)],
+             [shapes.rectangle(pos=[0,1.8],
+                 width=1,height=0.3)] ])
+
 
