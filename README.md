@@ -20,7 +20,7 @@ git clone https://github.com/EduardoBarreto/cgprojet.git
 cd cgproject
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements
+pip install -r requirements.txt
 python cores.py
 ```
 
