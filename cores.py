@@ -34,7 +34,16 @@ def set_coisa(sl):
     # For readability, limit precision of display of quantities to 3 figures
     f = "RGB = <{:1.3f}, {:1.3f}, {:1.3f}>, HSV = <{:1.3f}, {:1.3f}, {:1.3f}>"
     scene.title = cancopy + f.format(rgb.x, rgb.y, rgb.z, hsv.x, hsv.y, hsv.z)
-
+ pi=3,14
+    ang=0
+    while true:
+        rate(100)        
+    ang=ang + (pi/180)
+    if(ang<=(pi/2)):
+        coisa.rotate(angle=(pi/180),axis=(0,1,0),origin=(0,0,0)
+                     
+   if((pi/2) < ang <= pi):
+        coisa.rotate(angle=(-pi/180),axis=(1,0,0),origin=(0,0,0))
 
 scene.caption = '\n'
 for i in range(6):  # Create the 3 RGB and 3 HSV sliders
